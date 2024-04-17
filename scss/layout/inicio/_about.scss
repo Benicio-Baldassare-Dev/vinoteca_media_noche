@@ -1,0 +1,19 @@
+.about{
+    background-color: map-get($colores , fondo);
+    
+    .columnas{
+        padding: 10px;
+        display: flex;
+        gap: 2%;
+    }
+}
+
+.about h2{
+        text-align: center;
+        color: map-get($colores, Subtitulos);
+    }
+
+.columnas img{
+    width: 40%;
+}
+

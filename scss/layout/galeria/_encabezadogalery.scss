@@ -1,0 +1,22 @@
+.galery-background{
+    width: 100%;
+    height: 500px;
+    background: url("../assets/img/background-galeria.png");
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.galery-info{
+    text-align: center;
+}
+
+.galery-info h2{
+    font-size: 80px;
+    color: map-get($colores, titulos);
+}
+
+.galery-info p{
+    color: map-get($colores, Subtitulos);
+    font-size: 15px;
+}

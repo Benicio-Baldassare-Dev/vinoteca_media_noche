@@ -1,0 +1,85 @@
+.grid-galery{
+    background-color: map-get($colores, fondo);
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "section-1 section-1 section-2"
+    "section-3 section-4 section-5"
+    "section-3 section-6 section-6";
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-galery section{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.grid-galery section:hover{
+    transform: scale(1.1);
+}
+
+.section-1{
+    background: blue;
+    grid-area: section-1;
+}
+
+.section-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-2{
+    background: green;
+    grid-area: section-2;
+}
+
+.section-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-3{
+    background: red;
+    grid-area: section-3;
+}
+
+.section-3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-4{
+    background: yellow;
+    grid-area: section-4;
+}
+
+.section-4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-5{
+    background: violet;
+    grid-area: section-5;
+}
+
+.section-5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-6{
+    background: grey;
+    grid-area: section-6;
+}
+
+.section-6 img{
+    width: 100%;
+    height: 100%;
+}

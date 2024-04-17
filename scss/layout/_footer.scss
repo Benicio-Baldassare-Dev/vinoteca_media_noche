@@ -1,0 +1,103 @@
+.pie-pagina {
+    width: 100%;
+    height: 40%;
+    background-color: map-get($colores, fondofooter);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 100px;
+}
+
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #ffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: right;
+    position: relative;
+    right: -600px;
+}
+
+.pie-pagina .grupo-1 .box {
+    width: 100%;
+    height: 100%;
+}
+
+.pie-pagina .grupo-1 .box .red-social{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+
+    position: relative;
+    right: -720px;
+}
+
+
+/*Logo Email*/
+.fa-solid {
+    display: inline-block;
+    text-decoration: none;
+    width: 48px;
+    height: 45px;
+    line-height: 45;
+    color: #ffff;
+    margin-right: 10px;
+    text-align: right;
+    transition: all 300ms ease;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+/*Logos Whatsapp, facebook y instagram*/
+.fa-brands {
+    display: inline-block;
+    text-decoration: none;
+    width: 48px;
+    height: 45px;
+    line-height: 45;
+    color: #ffff;
+    margin-right: 10px;
+    text-align: right;
+    transition: all 300ms ease;
+    transform: scale(1.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.fa-brands:hover{
+    color: map-get($colores, botones);
+}
+
+.fa-solid:hover{
+    color: map-get($colores, botones);
+}
+
+
+.pie-pagina .grupo-2 {
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #ffff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}

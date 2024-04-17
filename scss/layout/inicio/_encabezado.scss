@@ -1,0 +1,27 @@
+.encabezado{
+    background: url(../assets/img/background-index.png);
+    background-size: cover;
+    padding: 70px 0;
+    h1{
+        font-size: 80px;
+        font-family: 'Lora';
+        color: map-get($colores, titulos);
+        margin-bottom: 0;
+    }
+}
+
+    .encabezado p{
+            width: 50%;
+            margin-bottom: 50px;
+            color: map-get($colores, textoTitulos);
+        }
+
+            .encabezado a{
+                text-decoration: none;
+                color: map-get($colores, botones);
+                border: 1px solid #8fbbea;
+                padding: 20px 40px 20px 40px;
+                border-radius: 10px;
+                transition: 0.4s;
+            }
+

@@ -1,0 +1,64 @@
+.carrito-tittle{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 80px;
+    background-image: url("../../../assets/img/background-carrito.png");
+}
+
+.carrito-tittle h2{
+    font-size: 40px;
+    font-family: 'Playfair';
+}
+
+.carrito-tittle p{
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+    font-family: 'Playfair';
+}
+
+.mi-carrito{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-color: map-get($colores, fondo);
+}
+
+.info-carrito{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+hr{
+    position: relative;
+    right: -370px;
+    width: 50%;
+}
+
+.total{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    position: relative;
+    right: -150px;
+}
+
+.botones-carrito a{
+    margin: 5%;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    color: white;
+    background-color: map-get($colores, fondocarrito);
+    border: 1px solid #8fbbea ;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.botones-carrito a:hover{
+    border: 1px solid #262c40;
+    color: #476592;
+}

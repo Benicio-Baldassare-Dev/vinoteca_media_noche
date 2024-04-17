@@ -1,0 +1,106 @@
+.desgustacion-main{
+    background-color: map-get($colores, fondogalery);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.degustaciones{
+    background-image: url(../assets/img/desgustacion-1.png);
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    height: 550px;
+    border: 20px solid #1a4c8a;
+    box-shadow: 1px 1px 40px;
+}
+
+.club{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: map-get($colores, textoTitulos);
+}
+
+.description{
+    width: 30%;
+    height: 70%;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    background-color: map-get($colores , fondogalery);
+}
+
+.description h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.description p{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+.beneficios{
+    width: 30%;
+    height: 70%;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    background-color: map-get($colores , fondogalery);
+}
+
+.beneficios h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.beneficios-list ul{
+    text-align: center;
+    list-style: none;
+    position: relative;
+    top: 15px;
+}
+
+.como-unirse{
+    width: 30%;
+    height: 70%;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    background-color: map-get($colores , fondogalery);
+}
+
+.como-unirse h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.como-unirse p{
+    width: 80%;
+    text-align: center;
+    position: relative;
+    right: -45px;
+    top: 15px;
+}
+
+.como-unirse a{
+    border: 1px solid #1a3860;
+    border-radius: 10px;
+    color: #1a3860;
+    padding: 15px 20px 15px 20px;
+    position: relative;
+    right: -160px;
+    top: 50px;
+}
+
+.como-unirse a:hover{
+    background-color: #1a3860;
+    color: white;
+    transition: 0.4s;
+}

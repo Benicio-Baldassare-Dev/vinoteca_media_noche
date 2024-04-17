@@ -1,0 +1,60 @@
+
+
+header .interior{
+    @include flex(row, space-between, center, 20px);
+    max-width: 100%;
+    width: 100%;
+    background-color: #1a4c8a;
+    li{
+        list-style: none;
+        .interior{
+            width: 100%;
+            margin: auto;
+        }
+    }
+}
+
+header .interior img{
+width: 6%;
+height: 10%;
+}
+
+header ul{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    right: 10px;
+    color: map-get($colores, anclas);
+        header ul li{
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+}
+
+header p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+    color: map-get($colores, textoTitulos);
+}
+
+nav #toggle, nav label{
+    display: none;
+}
+
+.navegacion{
+    color: black;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: map-get($colores, textoTitulos);
+}
+
+header ul li:hover{
+    transform: scale(1.1);
+}
+
+.navegacion a:hover{
+    color: white;
+}

@@ -1,0 +1,64 @@
+.contact{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    background: url(../assets/img/background-about.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contact .izquierda {
+    width: 40%;
+}
+
+.contact h2{
+    font-size: 80px;
+    font-family: 'Lora';
+    color: map-get($colores, titulos);
+    margin-bottom: 50px;
+}
+
+.contact .izquierda p{
+    font-size: 14px;
+    color: map-get($colores, textoTitulos);
+    margin-top: 40px;
+}
+
+.encabezado a:hover,
+.contact a:hover{
+    background-color: map-get($colores, titulos);
+    color: white;
+}
+
+.contact .derecha{
+    background-color: map-get($colores, fondocontact);
+    color: #f2f7fd;
+    padding: 25px 50px;
+}
+
+.datos {
+    font-size: 13px;
+}
+
+.derecha h3{
+    font-size: 40px;
+}
+
+.derecha a{
+    text-decoration: none;
+    padding: 10px 25px;
+    position: relative;
+    top: 40px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: map-get($colores, botones);
+    border: 1px solid #8fbbea ;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    transition: 0.4s;
+}

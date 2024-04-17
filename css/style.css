@@ -1,0 +1,987 @@
+/*
+? Nos permite crear bloque de codigo, modulares o no.
+*/
+/*
+! INDEX
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header .interior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  width: 100%;
+  background-color: #1a4c8a; }
+  header .interior li {
+    list-style: none; }
+    header .interior li .interior {
+      width: 100%;
+      margin: auto; }
+
+header .interior img {
+  width: 6%;
+  height: 10%; }
+
+header ul {
+  display: flex;
+  position: relative;
+  gap: 20px;
+  right: 10px;
+  color: #f2f7fd; }
+  header ul header ul li {
+    margin-right: 20px;
+    margin-top: 20px; }
+
+header p {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+  color: #c4daf3; }
+
+nav #toggle, nav label {
+  display: none; }
+
+.navegacion {
+  color: black; }
+
+.navegacion a {
+  text-decoration: none;
+  color: #c4daf3; }
+
+header ul li:hover {
+  transform: scale(1.1); }
+
+.navegacion a:hover {
+  color: white; }
+
+.encabezado {
+  background: url(../assets/img/background-index.png);
+  background-size: cover;
+  padding: 70px 0; }
+  .encabezado h1 {
+    font-size: 80px;
+    font-family: 'Lora';
+    color: #8fbbea;
+    margin-bottom: 0; }
+
+.encabezado p {
+  width: 50%;
+  margin-bottom: 50px;
+  color: #c4daf3; }
+
+.encabezado a {
+  text-decoration: none;
+  color: #8fbbea;
+  border: 1px solid #8fbbea;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  transition: 0.4s; }
+
+.about {
+  background-color: #f2f7fd; }
+  .about .columnas {
+    padding: 10px;
+    display: flex;
+    gap: 2%; }
+
+.about h2 {
+  text-align: center;
+  color: #8fbbea; }
+
+.columnas img {
+  width: 40%; }
+
+.grid-wrapper .grids-contain div {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.grid-wrapper .grids-contain div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px; }
+
+.grid-wrapper .grids-contain div img:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+  filter: grayscale(1); }
+
+.grid-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #9cb6dd; }
+
+.grid-wrapper .grids-contain {
+  padding: 5%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+  justify-content: center; }
+
+.contact {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  background: url(../assets/img/background-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.contact .izquierda {
+  width: 40%; }
+
+.contact h2 {
+  font-size: 80px;
+  font-family: 'Lora';
+  color: #8fbbea;
+  margin-bottom: 50px; }
+
+.contact .izquierda p {
+  font-size: 14px;
+  color: #c4daf3;
+  margin-top: 40px; }
+
+.encabezado a:hover,
+.contact a:hover {
+  background-color: #8fbbea;
+  color: white; }
+
+.contact .derecha {
+  background-color: #262c40;
+  color: #f2f7fd;
+  padding: 25px 50px; }
+
+.datos {
+  font-size: 13px; }
+
+.derecha h3 {
+  font-size: 40px; }
+
+.derecha a {
+  text-decoration: none;
+  padding: 10px 25px;
+  position: relative;
+  top: 40px; }
+
+.contact a {
+  text-decoration: none;
+  color: #8fbbea;
+  border: 1px solid #8fbbea;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  transition: 0.4s; }
+
+/*
+! TIENDA 
+*/
+.header-img {
+  width: 100%;
+  height: 400px;
+  background: url("../assets/img/background-tienda.png");
+  background-size: cover;
+  padding: 70px 0; }
+
+.tittle-tienda {
+  width: 90%;
+  height: 100px;
+  margin: 15px;
+  text-align: center;
+  padding: 70px; }
+
+.tittle-tienda h2 {
+  color: #8fbbea;
+  font-size: 55px; }
+
+.tittle-tienda p {
+  font-size: 15px;
+  color: #8fbbea; }
+
+.ofert-container {
+  display: flex;
+  padding: 20px;
+  background: #f2f7fd;
+  gap: 15px;
+  text-align: center; }
+
+.ofert-1,
+.ofert-2,
+.ofert-3 {
+  display: flex;
+  width: 50%;
+  height: 150px;
+  border: 1px solid #4d4d4d7d;
+  border-radius: 10px;
+  background-color: #c4daf3; }
+
+.ofert-txt {
+  width: 60%;
+  height: 100%;
+  margin-top: 30px; }
+
+.ofert-1 h3 {
+  width: 100%;
+  height: 20%;
+  text-align: center; }
+
+.ofert-1 img,
+.ofert-2 img,
+.ofert-3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px; }
+
+.ofert-1 a, .ofert-2 a, .ofert-3 a {
+  text-decoration: none;
+  color: #1a3860;
+  border: 1px solid #1a3860;
+  padding: 8px 15px 8px 15px;
+  border-radius: 10px;
+  transition: 0.4s;
+  position: relative;
+  top: 15px; }
+
+.ofert-2 h3 {
+  width: 100%;
+  height: 20%;
+  text-align: center; }
+
+.ofert-3 h3 {
+  width: 100%;
+  height: 20%;
+  text-align: center; }
+
+.ofert-1 a:hover,
+.ofert-2 a:hover,
+.ofert-3 a:hover {
+  background-color: #1a3860;
+  color: white;
+  transition: 0.4s; }
+
+.tittle-product {
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  text-align: center;
+  color: #0c192c; }
+
+.content-products {
+  display: flex;
+  gap: 5px; }
+
+.product-content {
+  border: 1px solid #4d4d4d7d;
+  background-color: #f2f7fd;
+  border-radius: 10px;
+  width: 200%;
+  height: 350px;
+  margin-top: 50px;
+  margin: 15px; }
+
+.product img {
+  width: 100%;
+  border-radius: 10px; }
+
+.product-txt {
+  text-align: center; }
+
+.product-txt a {
+  text-decoration: none;
+  color: #1a3860;
+  border: 1px solid #1a3860;
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
+  text-align: left; }
+
+.product-txt a:hover {
+  background-color: #1a3860;
+  color: white;
+  transition: 0.4s; }
+
+/*
+! CLUB
+*/
+.desgutaciones-background {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  align-self: center;
+  background-image: url(../assets/img/background-desgustaciones.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.desgutaciones-background .desgustacion-info {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 70px;
+  color: white; }
+
+.desgutaciones-background .desgustacion-info h2 {
+  font-size: 50px; }
+
+.desgutaciones-background .desgustacion-info p {
+  font: 25px; }
+
+.desgustacion-main {
+  background-color: #9cb6dd;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px; }
+
+.degustaciones {
+  background-image: url(../assets/img/desgustacion-1.png);
+  background-size: cover;
+  background-position: center;
+  width: 20%;
+  height: 550px;
+  border: 20px solid #1a4c8a;
+  box-shadow: 1px 1px 40px; }
+
+.club {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #c4daf3; }
+
+.description {
+  width: 30%;
+  height: 70%;
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  background-color: #9cb6dd; }
+
+.description h3 {
+  text-align: center;
+  font-size: 25px; }
+
+.description p {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 15px; }
+
+.beneficios {
+  width: 30%;
+  height: 70%;
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  background-color: #9cb6dd; }
+
+.beneficios h3 {
+  text-align: center;
+  font-size: 25px; }
+
+.beneficios-list ul {
+  text-align: center;
+  list-style: none;
+  position: relative;
+  top: 15px; }
+
+.como-unirse {
+  width: 30%;
+  height: 70%;
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  background-color: #9cb6dd; }
+
+.como-unirse h3 {
+  text-align: center;
+  font-size: 25px; }
+
+.como-unirse p {
+  width: 80%;
+  text-align: center;
+  position: relative;
+  right: -45px;
+  top: 15px; }
+
+.como-unirse a {
+  border: 1px solid #1a3860;
+  border-radius: 10px;
+  color: #1a3860;
+  padding: 15px 20px 15px 20px;
+  position: relative;
+  right: -160px;
+  top: 50px; }
+
+.como-unirse a:hover {
+  background-color: #1a3860;
+  color: white;
+  transition: 0.4s; }
+
+/*
+! Galeria
+*/
+.galery-background {
+  width: 100%;
+  height: 500px;
+  background: url("../assets/img/background-galeria.png");
+  background-position: center;
+  background-size: cover;
+  padding: 70px 0; }
+
+.galery-info {
+  text-align: center; }
+
+.galery-info h2 {
+  font-size: 80px;
+  color: #8fbbea; }
+
+.galery-info p {
+  color: #8fbbea;
+  font-size: 15px; }
+
+.grid-galery {
+  background-color: #f2f7fd;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas: "section-1 section-1 section-2" "section-3 section-4 section-5" "section-3 section-6 section-6";
+  row-gap: 20px;
+  column-gap: 20px;
+  justify-content: center;
+  align-content: center; }
+
+.grid-galery section {
+  border-radius: 15px;
+  overflow: hidden; }
+
+.grid-galery section:hover {
+  transform: scale(1.1); }
+
+.section-1 {
+  background: blue;
+  grid-area: section-1; }
+
+.section-1 img {
+  width: 100%;
+  height: 100%; }
+
+.section-2 {
+  background: green;
+  grid-area: section-2; }
+
+.section-2 img {
+  width: 100%;
+  height: 100%; }
+
+.section-3 {
+  background: red;
+  grid-area: section-3; }
+
+.section-3 img {
+  width: 100%;
+  height: 100%; }
+
+.section-4 {
+  background: yellow;
+  grid-area: section-4; }
+
+.section-4 img {
+  width: 100%;
+  height: 100%; }
+
+.section-5 {
+  background: violet;
+  grid-area: section-5; }
+
+.section-5 img {
+  width: 100%;
+  height: 100%; }
+
+.section-6 {
+  background: grey;
+  grid-area: section-6; }
+
+.section-6 img {
+  width: 100%;
+  height: 100%; }
+
+/*
+! Carrito
+*/
+.carrito-tittle {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 80px;
+  background-image: url("../../../assets/img/background-carrito.png"); }
+
+.carrito-tittle h2 {
+  font-size: 40px;
+  font-family: 'Playfair'; }
+
+.carrito-tittle p {
+  font-size: 20px;
+  position: relative;
+  top: 15px;
+  font-family: 'Playfair'; }
+
+.mi-carrito {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  background-color: #f2f7fd; }
+
+.info-carrito {
+  display: flex;
+  gap: 50px;
+  justify-content: center; }
+
+hr {
+  position: relative;
+  right: -370px;
+  width: 50%; }
+
+.total {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  position: relative;
+  right: -150px; }
+
+.botones-carrito a {
+  margin: 5%;
+  text-decoration: none;
+  position: relative;
+  top: 50px;
+  color: white;
+  background-color: #8fbbea;
+  border: 1px solid #8fbbea;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  transition: 0.4s; }
+
+.botones-carrito a:hover {
+  border: 1px solid #262c40;
+  color: #476592; }
+
+/*
+! Footer
+*/
+.pie-pagina {
+  width: 100%;
+  height: 40%;
+  background-color: #191919; }
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px; }
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 100px; }
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #ffff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: right;
+  position: relative;
+  right: -600px; }
+
+.pie-pagina .grupo-1 .box {
+  width: 100%;
+  height: 100%; }
+
+.pie-pagina .grupo-1 .box .red-social {
+  width: 100%;
+  height: 75%;
+  text-align: center;
+  position: relative;
+  right: -720px; }
+
+/*Logo Email*/
+.fa-solid {
+  display: inline-block;
+  text-decoration: none;
+  width: 48px;
+  height: 45px;
+  line-height: 45;
+  color: #ffff;
+  margin-right: 10px;
+  text-align: right;
+  transition: all 300ms ease;
+  cursor: pointer;
+  position: relative; }
+
+/*Logos Whatsapp, facebook y instagram*/
+.fa-brands {
+  display: inline-block;
+  text-decoration: none;
+  width: 48px;
+  height: 45px;
+  line-height: 45;
+  color: #ffff;
+  margin-right: 10px;
+  text-align: right;
+  transition: all 300ms ease;
+  transform: scale(1.1);
+  cursor: pointer;
+  position: relative; }
+
+.fa-brands:hover {
+  color: #8fbbea; }
+
+.fa-solid:hover {
+  color: #8fbbea; }
+
+.pie-pagina .grupo-2 {
+  background-color: black;
+  padding: 15px 10px;
+  text-align: center;
+  color: #ffff; }
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px; }
+
+/*
+? RESPONSIVE
+*/
+@media screen and (max-width: 768px) {
+  /* 
+    !  INICIO 
+    */
+  header ul {
+    right: 20px; }
+  .contenedor {
+    position: relative;
+    right: -30px;
+    width: 80%; }
+  .grid-wrapper .grids-contain {
+    grid-template-columns: repeat(4, 1fr); }
+  .contact {
+    height: 100%; }
+  .contact .izquierda {
+    height: 290px; }
+  .contact .derecha {
+    height: 290px; }
+  .contact h2 {
+    font-size: 35px; }
+  .contact .izquierda p {
+    font-size: 12px; }
+  .pie-pagina .grupo-1 .box h2 {
+    right: 0px; }
+  .pie-pagina .grupo-1 .box .red-social {
+    width: 120%;
+    right: -50px; }
+  /*
+    ! TIENDA
+    */
+  .tittle-tienda {
+    width: 96%; }
+  .ofert-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .ofert-1, .ofert-2, .ofert-3 {
+    width: 100%; }
+  .content-products {
+    display: grid;
+    grid-template-columns: repeat(3, 230px); }
+  .product-content {
+    width: 100%; }
+  /*
+    ! CLUB
+    */
+  .description p {
+    width: 100%;
+    font-size: 14px;
+    top: 7px; }
+  .description {
+    height: 95%; }
+  .beneficios {
+    height: 95%; }
+  .como-unirse {
+    height: 95%; }
+  .como-unirse p {
+    right: -25px; }
+  .como-unirse a {
+    right: -50px; }
+  /*
+    ! GALERIA
+    */
+  .grid-galery {
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 5px;
+    column-gap: 4px; }
+  /*
+    ! CARRITO
+    */
+  .total {
+    width: 80%; } }
+
+@media screen and (max-width: 426px) {
+  /*
+    ! INICIO
+    */
+  header .interior {
+    flex-direction: column; }
+  header .interior img {
+    width: 15%; }
+  header p {
+    font-size: 20px; }
+  .contact h2 {
+    font-size: 31px; }
+  .contact a {
+    padding: 15px 35px 15px 35px; }
+  .contact .izquierda p {
+    font-size: 10px;
+    margin-top: 25px; }
+  .contact .derecha {
+    background-color: #262c40;
+    color: #f2f7fd;
+    padding: 23px 15px; }
+  .pie-pagina .grupo-1 .box figure img {
+    width: 80px; }
+  .pie-pagina .grupo-1 .box h2 {
+    right: -100px; }
+  .pie-pagina .grupo-1 .box .red-social {
+    width: 150%;
+    right: -80px; }
+  /*
+    ! TIENDA
+    */
+  .tittle-product {
+    font-size: 40px; }
+  .content-products {
+    grid-template-columns: repeat(2, 200px); }
+  /*
+    !CLUB
+    */
+  .club {
+    width: 100%;
+    height: 100%;
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .description {
+    width: 100%;
+    height: 100%; }
+  .description h3 {
+    font-size: 20px; }
+  .description p {
+    top: 0px;
+    font-size: 15px; }
+  .beneficios {
+    width: 100%;
+    height: 100%; }
+  .beneficios h3 {
+    font-size: 20px; }
+  .beneficios-list ul {
+    top: 0px; }
+  .beneficios p {
+    font-size: 15px; }
+  .como-unirse {
+    width: 100%;
+    height: 150px; }
+  .como-unirse h3 {
+    font-size: 19px; }
+  .como-unirse p {
+    font-size: 15px;
+    width: 80%;
+    right: -35px; }
+  .como-unirse a {
+    padding: 5px 10px 5px 10px;
+    top: 25px;
+    right: -100px; }
+  /*
+    ! GALERIA
+    */
+  .grid-galery {
+    background-color: #f2f7fd;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 195px);
+    grid-template-areas: "section-1 section-1 section-2" "section-3 section-4 section-5" "section-6 section-6 section-6";
+    row-gap: 10px;
+    column-gap: 5px; }
+  /*
+    ! CARRITO
+    */
+  .carrito-tittle p {
+    font-size: 15px; }
+  .info-carrito {
+    gap: 16px;
+    font-size: 13px; }
+  hr {
+    right: -36px;
+    width: 85%; }
+  .total {
+    width: 65%;
+    gap: 50px; }
+  .botones-carrito a {
+    margin: 1%;
+    padding: 5px 10px 5px 10px; } }
+
+@media screen and (max-width: 376px) {
+  /*
+    ! INICIO
+    */
+  header {
+    width: 100%; }
+  .about .columnas {
+    display: contents; }
+  .columna-1 p {
+    text-align: center; }
+  .columnas img {
+    width: 50%;
+    position: relative;
+    right: -80px; }
+  .columna-2 p {
+    text-align: center; }
+  .columna-3 p {
+    text-align: center; }
+  .contact h2 {
+    font-size: 25px; }
+  .contact .izquierda p {
+    font-size: 10px;
+    margin-top: 10px; }
+  .contact .derecha {
+    padding: 23px 0px; }
+  .datos {
+    width: 80%;
+    position: relative;
+    right: -20px; }
+  .contact a {
+    padding: 10px 30px 10px 30px;
+    position: relative;
+    right: -15px; }
+  /*
+    ! TIENDA
+    */
+  .content-products {
+    grid-template-columns: repeat(2, 170px); }
+  .product-txt a {
+    position: relative;
+    top: 18px; }
+  /*
+    ! CLUB
+    */
+  .desgutaciones-background .desgustacion-info h2 {
+    font-size: 30px; }
+  .desgutaciones-background .desgustacion-info p {
+    font-size: 10px; }
+  .description h3 {
+    font-size: 15px; }
+  .description p {
+    font-size: 12px;
+    padding: 5px 5px; }
+  .beneficios h3 {
+    font-size: 15px; }
+  .beneficios p {
+    font-size: 12px; }
+  .como-unirse h3 {
+    font-size: 15px; }
+  .como-unirse p {
+    top: 0px;
+    right: -25px;
+    font-size: 12px;
+    padding: 5px 5px; }
+  .como-unirse a {
+    padding: 2px 2px 2px 2px;
+    top: 0px;
+    right: -85px; }
+  /*
+    ! GALERIA
+    */
+  .grid-galery {
+    grid-template-columns: repeat(3, 110px);
+    grid-template-rows: repeat(3, 185px); }
+  /*
+    ! CARRITO
+    */
+  .total {
+    width: 60%; }
+  .botones-carrito {
+    width: 95%;
+    flex-direction: column;
+    display: flex; }
+  .botones-carrito a {
+    margin: 1%;
+    padding: 5px 10px 5px 10px; } }
+
+@media screen and (max-width: 321px) {
+  /*
+    ! HEADER
+    */
+  .navegacion {
+    width: 80%; }
+  /*
+    ! INICIO
+    */
+  .encabezado h1 {
+    font-size: 60px; }
+  .encabezado p {
+    width: 100%; }
+  .contact h2 {
+    font-size: 20px; }
+  .contact .izquierda p {
+    font-size: 10px;
+    margin-top: 15px; }
+  .derecha h3 {
+    font-size: 32px; }
+  .datos {
+    width: 80%;
+    position: relative;
+    right: -20px; }
+  .pie-pagina .grupo-1 .box h2 {
+    right: -70px; }
+  .pie-pagina .grupo-1 .box .red-social {
+    width: 170%;
+    right: -35px; }
+  /*
+    ! TIENDA
+    */
+  .content-products {
+    grid-template-columns: repeat(2, 140px); }
+  /*
+    ! Club
+    */
+  .como-unirse a {
+    right: -60px;
+    padding: 1px 1px 1px 1px; }
+  /*
+    ! GALERIA
+    */
+  .grid-galery {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 180px); }
+  /*
+    ! CARRITO
+    */
+  .total {
+    width: 50%; } }

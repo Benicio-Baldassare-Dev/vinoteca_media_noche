@@ -1,0 +1,34 @@
+.grid-wrapper .grids-contain div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper  .grids-contain  div  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.grid-wrapper .grids-contain  div  img:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+    filter: grayscale(1);
+}
+
+.grid-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: map-get($colores, fondogalery);
+}
+
+.grid-wrapper .grids-contain{
+    padding: 5%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    justify-content: center;
+}
