@@ -3,7 +3,7 @@
     background-size: cover;
     padding: 70px 0;
     h1{
-        font-size: 80px;
+        font-size: map-get($tipografias, titulos);
         font-family: 'Lora';
         color: map-get($colores, titulos);
         margin-bottom: 0;
@@ -13,9 +13,9 @@
     .encabezado p{
             width: 50%;
             margin-bottom: 50px;
+            font-size: map-get($tipografias, texto );
             color: map-get($colores, textoTitulos);
         }
-
             .encabezado a{
                 text-decoration: none;
                 color: map-get($colores, botones);

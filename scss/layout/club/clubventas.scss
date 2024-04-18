@@ -36,7 +36,7 @@
 
 .description h3{
     text-align: center;
-    font-size: 25px;
+    font-size: map-get($tipografias , textoul);
 }
 
 .description p{
@@ -44,6 +44,7 @@
     text-align: center;
     position: relative;
     top: 15px;
+    font-size: map-get($tipografias , texto);
 }
 
 .beneficios{
@@ -57,7 +58,7 @@
 
 .beneficios h3{
     text-align: center;
-    font-size: 25px;
+    font-size: map-get($tipografias , textoul);
 }
 
 .beneficios-list ul{
@@ -65,6 +66,7 @@
     list-style: none;
     position: relative;
     top: 15px;
+    font-size: map-get($tipografias , texto);
 }
 
 .como-unirse{
@@ -78,7 +80,7 @@
 
 .como-unirse h3{
     text-align: center;
-    font-size: 25px;
+    font-size: map-get($tipografias , textoul);
 }
 
 .como-unirse p{
@@ -87,6 +89,7 @@
     position: relative;
     right: -45px;
     top: 15px;
+    font-size: map-get($tipografias , texto);
 }
 
 .como-unirse a{

@@ -7,12 +7,12 @@
 }
 
 .carrito-tittle h2{
-    font-size: 40px;
+    font-size: map-get($tipografias , titulos);
     font-family: 'Playfair';
 }
 
 .carrito-tittle p{
-    font-size: 20px;
+    font-size: map-get($tipografias , textoul);
     position: relative;
     top: 15px;
     font-family: 'Playfair';
@@ -29,6 +29,7 @@
     display: flex;
     gap: 50px;
     justify-content: center;
+    font-size: map-get($tipografias , texto);
 }
 
 hr{
@@ -43,6 +44,7 @@ hr{
     justify-content: center;
     position: relative;
     right: -150px;
+    font-size: map-get($tipografias , texto);
 }
 
 .botones-carrito a{

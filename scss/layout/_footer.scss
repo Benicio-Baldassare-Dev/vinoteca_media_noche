@@ -1,3 +1,4 @@
+
 .pie-pagina {
     width: 100%;
     height: 40%;
@@ -60,6 +61,7 @@
     color: #ffff;
     margin-right: 10px;
     text-align: right;
+    font-size: map-get($tipografias, logos);
     transition: all 300ms ease;
     cursor: pointer;
     position: relative;
@@ -77,6 +79,7 @@
     margin-right: 10px;
     text-align: right;
     transition: all 300ms ease;
+    font-size: map-get($tipografias, logos);
     transform: scale(1.1);
     cursor: pointer;
     position: relative;

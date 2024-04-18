@@ -15,14 +15,14 @@
 }
 
 .contact h2{
-    font-size: 80px;
+    font-size: map-get($tipografias , titulos);
     font-family: 'Lora';
     color: map-get($colores, titulos);
     margin-bottom: 50px;
 }
 
 .contact .izquierda p{
-    font-size: 14px;
+    font-size: map-get($tipografias , texto);
     color: map-get($colores, textoTitulos);
     margin-top: 40px;
 }
@@ -40,11 +40,11 @@
 }
 
 .datos {
-    font-size: 13px;
+    font-size: map-get($tipografias , texto);
 }
 
 .derecha h3{
-    font-size: 40px;
+    font-size: map-get($tipografias , subtitulos); 
 }
 
 .derecha a{

@@ -2,18 +2,32 @@
     background-color: map-get($colores , fondo);
     
     .columnas{
-        padding: 10px;
+        padding: 20px 15px;
         display: flex;
-        gap: 2%;
+        justify-content: center;
+        gap: 10%;
     }
 }
 
 .about h2{
         text-align: center;
         color: map-get($colores, Subtitulos);
+        font-size: map-get($tipografias, subtitulos );
     }
 
-.columnas img{
+    .columnas .columna-1{
+        width: 30%;
+    }
+
+    .columnas .columna-2{
+        width: 30%;
+    }
+
+.columnas .columna-1 img{
+    width: 30%;
+}
+
+.columnas .columna-2 img{
     width: 40%;
 }
 

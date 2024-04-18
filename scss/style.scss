@@ -12,6 +12,14 @@ $colores:(
     botones: #8fbbea,
 );
 
+$tipografias:(
+    texto: 16px,
+    titulos: 80px,
+    subtitulos: 40px,
+    textoul: 20px,
+    logos: 20px,
+);
+
 @import "./utilities/mixins.scss";
 
 /*
@@ -226,8 +234,12 @@ $colores:(
     ! INICIO
     */
 
-    header .interior {
-        flex-direction: column;
+    nav .navegacion {
+        right: 51px;
+    }
+
+    header ul li a {
+        font-size: 16px;
     }
 
     header .interior img {
@@ -236,6 +248,14 @@ $colores:(
 
     header p {
         font-size: 20px;
+    }
+
+    .columnas .columna-1 {
+        width: 50%;
+    }
+
+    .columnas .columna-2 {
+        width: 50%;
     }
 
     .contact h2 {
@@ -268,6 +288,14 @@ $colores:(
     .pie-pagina .grupo-1 .box .red-social {
         width: 150%;
         right: -80px;
+    }
+
+    .fa-brands {
+        font-size: 16px;
+    }
+
+    .fa-solid {
+        font-size: 16px;
     }
 
     /*
@@ -401,8 +429,21 @@ $colores:(
         width: 100%;
     }
 
+    nav .navegacion {
+        right: 20px;
+    }
+
+    .about h2 {
+        font-size: 35px;
+    }
+
     .about .columnas {
         display: contents;
+    }
+
+    .columnas .columna-1 {
+        width: 100%;
+        padding: 15px 20px;
     }
 
     .columna-1 p{
@@ -412,7 +453,16 @@ $colores:(
     .columnas img {
         width: 50%;
         position: relative;
-        right: -80px;
+        right: -130px;
+    }
+
+    .columnas .columna-2 {
+        width: 100%;
+        padding: 15px 20px;
+    }
+
+    .columnas .columna-2 img {
+        right: -100px;
     }
 
     .columna-2 p{
@@ -539,6 +589,15 @@ $colores:(
     /*
     ! HEADER
     */
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav label {
+        top: 3px;
+        right: -35px;
+    }
 
     .navegacion {
         width: 80%;

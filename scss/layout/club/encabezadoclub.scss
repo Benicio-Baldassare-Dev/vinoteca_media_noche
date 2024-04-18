@@ -18,9 +18,9 @@
 }
 
 .desgutaciones-background .desgustacion-info h2{
-    font-size: 50px;
+    font-size: map-get($tipografias , titulos);
 }
 
 .desgutaciones-background .desgustacion-info p{
-    font: 25px;
+    font-size: map-get($tipografias , texto);
 }
